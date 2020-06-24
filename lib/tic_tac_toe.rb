@@ -85,5 +85,7 @@ class TicTacToe
      !!(won? or draw?)
    end 
    
-  
+  def winner 
+    won? && current_player
+  end 
 end
