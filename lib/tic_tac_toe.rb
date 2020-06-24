@@ -69,4 +69,12 @@ class TicTacToe
        position_taken?(position_1_index)
      end
    end 
+   
+   def full? 
+     board.all? do |token|
+       ["X", "O"].include?(token)
+     end 
+   end
+   
+  
 end
