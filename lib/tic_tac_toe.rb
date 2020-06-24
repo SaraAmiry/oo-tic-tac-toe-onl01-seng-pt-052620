@@ -72,7 +72,8 @@ class TicTacToe
    
    def full? 
      board.all? do |token|
-       ["X", "O"].include?(token)
+       token == "X" || token == "O"
+      # ["X", "O"].include?(token)
      end 
    end
    
